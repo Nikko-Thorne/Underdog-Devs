@@ -2330,3 +2330,4 @@
 .babel.json
 .android/adbkey
 .android/adbkey.pub
+.vscode/extensions.json
