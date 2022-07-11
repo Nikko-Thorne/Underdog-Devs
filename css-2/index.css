@@ -53,3 +53,24 @@ ul {
     margin-left: 40px;
     
   }
+
+  .insta {
+    border: 1px solid rgb(59, 2, 59);;
+  }
+
+  .fb {
+    filter: invert(7%) sepia(57%) saturate(5863%) hue-rotate(292deg) brightness(74%) contrast(103%);
+    
+  }
+
+  .box-3 {
+
+  }
+
+  .box-4 {
+    
+  }
+
+  .box-5 {
+    
+  }
