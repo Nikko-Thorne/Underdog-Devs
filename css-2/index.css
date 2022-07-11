@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(248, 244, 244);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    background-image: linear-gradient(rgb(248, 244, 244), white);
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    
+  }
+
+  .block-1 {
+    display: flex;
+    gap: 400px;
+    margin-left: 40px;
+    color:rgb(153, 143, 143);
+    background-color: rgb(248, 244, 244);
+  }
+
+  .star {
+    filter: invert(78%) sepia(71%) saturate(578%) hue-rotate(356deg) brightness(97%) contrast(110%);
+  }
+
+  .block-2 {
+    display: flex;
+    margin-left: 40px;
+    color: rgb(59, 2, 59);
+    gap: 210px;
+  }
+
+  .block-3 {
+    display: flex;
+    margin-left: 40px;
+    color:rgb(153, 143, 143);
+    font-size:x-large;
+    padding-bottom: 10px;
+    
+  }
+
+  .block-4 {
+    display: flex;
+    gap: 50px;
+    margin-left: 60px;
+    padding-bottom: 100px;
+  }
+
+  .block-5 {
+    display: flex;
+    margin-left: 40px;
+    
+  }
