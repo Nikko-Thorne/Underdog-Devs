@@ -28,7 +28,8 @@ ul {
   .block-2 {
     display: flex;
     margin-left: 40px;
-    color: rgb(59, 2, 59);
+    color: #433e5c
+    ;
     gap: 210px;
   }
 
@@ -55,22 +56,63 @@ ul {
   }
 
   .insta {
-    border: 1px solid rgb(59, 2, 59);;
-  }
-
-  .fb {
-    filter: invert(7%) sepia(57%) saturate(5863%) hue-rotate(292deg) brightness(74%) contrast(103%);
     
+
   }
 
   .box-3 {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #3c3954;
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+    
   }
 
   .box-4 {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3c3954;
+    border: 1px solid rgb(59, 2, 59);
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
   }
 
   .box-5 {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(59, 2, 59);
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .block-5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .addtocart {
+    color: #fece69;
+    background-color: #312c46;
+    margin-left: 30px;
+    width: 200px;
+    height: 75px;
+    border-radius: 25px;
+
+  }
+
+  .wish {
+    margin-left: 30px;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    color: #312c469c;
+    border-color: #312c469c;
   }
