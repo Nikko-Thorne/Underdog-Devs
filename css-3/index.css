@@ -1,133 +1,19 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
 body {
-  line-height: 1;
+background-color: black;
 }
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+
+.background {
+  margin-top: 100px;
+  background-color: #ffffff;
 }
 
 .background-top {
   width: 100%;
   height: 100px;
-  background: rgb(254,254,255);
-background: linear-gradient(90deg, rgba(254,254,255,1) 0%, rgba(251,251,251,1) 50%, rgba(254,254,255,1) 100%);
+  background: rgb(254,255,254);
+background: linear-gradient(90deg, rgba(254,255,254,1) 0%, rgba(250,250,251,1) 50%, rgba(254,255,254,1) 100%);
+  z-index: 1;
+
 }
 
 .background-bottom {
@@ -135,16 +21,104 @@ background: linear-gradient(90deg, rgba(254,254,255,1) 0%, rgba(251,251,251,1) 5
   height: 100px;
   background: rgb(243,245,247);
   background: linear-gradient(90deg, rgba(243,245,247,1) 0%, rgba(232,232,234,1) 50%, rgba(243,245,247,1) 100%);
+  z-index: 1;
 }
 
 .overlay-box {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
   width: 75%;
+  height: 100px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 150px;
+  left: 10%;
+  gap: 40px;
+  z-index: 10;
+  border-radius: 15px;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(243,245,247,1);
+  width: 15%;
   height: 75px;
-  background-color: black;
-  
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  font-weight: bold;
+}
+
+.year {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  font-weight: bold;
+}
+
+.type {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  font-weight: bold;
 }
 
 .search {
-  width: 50px;
-  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(157,66,241);
+  background: linear-gradient(90deg, rgba(157,66,241,1) 0%, rgba(137,54,244,1) 50%, rgba(115,42,250,1) 100%);
+  width: 10%;
+  gap: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.search-svg {
+  width: 25px;
+  height: 25px;
+
+}
+
+.search-text-bar {
+  color: white;
+}
+
+select {
+  border: none;
+  color: rgba(0, 0, 0, 0.664);
+}
+
+select.locations {
+  background-color: rgba(243,245,247,1);
+}
+
+.green {
+  position: absolute;
+  top: 0px;
+  margin-left: 1190px;
+  z-index: 9;
+  width: 100px;
+  display: flex;
+  background: linear-gradient(to top, transparent 50%, rgb(253, 250, 250) 50%),
+              radial-gradient(circle closest-side, #5fedb8, rgba(255, 255, 255, 0));
+}
+
+.green-mask {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  position: absolute;
+  z-index: 15;
+  top: 0
 }
