@@ -82,7 +82,7 @@ body {
 a:link {
     color:rgba(255, 255, 255, 0.76);
     text-decoration: none;
-
+    font-size: 20px;
 }
 
 a:hover {
@@ -91,40 +91,116 @@ a:hover {
 
 .wrapper {
     display: inline-flex;
+    width: 100%;
     margin-top: 10%;
 }
 
 .left-box {
-    padding: 5%;
+    width: 10%;
 }
 
 .logo-box {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
+    width: 40%;
+    gap: 275px;
+    border-left: 3px solid #1e1f2c;
+    border-right: 3px solid #1e1f2c;
+}
+
+.logo-text {
+    display: flex;
+    color: white;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.trademark {
+    color: rgba(255, 255, 255, 0.582);
+    font-size: 20px;
+}
+
+p.t {
+    font-size: 60px;
+    font-family: sans-serif;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-shadow: -1px 1px 0px;
+}
+
+p.tradlr {
+    font-size: 30px;
+    font-weight: 500;
 }
 
 .left-content-box {
     display: inline-flex;
     flex-direction: column;
+    width: 20%;
     gap: 50px;
+    
 }
 
 .about-text {
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
+    margin-top: 20%;
 }
 
 .security-text {
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
 }
 
 .right-content-box {
     display: inline-flex;
     flex-direction: column;
+    width: 20%;
+    gap: 60px;
+    border-right: 3px solid #1e1f2c;
+   
 }
 
 .reg-text {
     display: flex;
     flex-direction: column;
+    margin-top: 20%;
+}
+
+.support-text {
+    display: flex;
+    flex-direction: column;
+    color:rgba(255, 255, 255, 0.76);
+}
+
+.address-text {
+    display: flex;
+    flex-direction: column;
+    color:rgba(255, 255, 255, 0.76);
+    font-size: 20px;
+}
+
+.social {
+    display: flex;
+    gap: 30px;
+
+}
+
+.linked {
+    stroke: #8d8c8d;
+    fill: #8d8c8d;
+}
+
+.paper-plane {
+    stroke: #8d8c8d;
+    fill: #191822;
+}
+
+
+.right-box {
+    width: 10%;
 }
