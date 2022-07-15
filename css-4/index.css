@@ -106,6 +106,7 @@ a:hover {
     gap: 275px;
     border-left: 3px solid #1e1f2c;
     border-right: 3px solid #1e1f2c;
+    z-index: 3;
 }
 
 .logo-text {
@@ -128,6 +129,7 @@ p.t {
     font-weight: 900;
     letter-spacing: 3px;
     text-shadow: -1px 1px 0px;
+    z-index: 4;
 }
 
 p.tradlr {
@@ -203,4 +205,17 @@ p.tradlr {
 
 .right-box {
     width: 10%;
+}
+
+.svg-t {
+    position: absolute;
+    margin-left: 190px;
+    top: 0;
+    margin-top: 260px;
+    z-index: 5;
+}
+
+.svg-t-mask {
+    fill: #191822;
+    stroke: #191822;
 }
