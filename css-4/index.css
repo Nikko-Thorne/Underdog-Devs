@@ -208,14 +208,5 @@ p.tradlr {
 }
 
 .svg-t {
-    position: absolute;
-    margin-left: 190px;
-    top: 0;
-    margin-top: 260px;
-    z-index: 5;
-}
 
-.svg-t-mask {
-    fill: #191822;
-    stroke: #191822;
 }
