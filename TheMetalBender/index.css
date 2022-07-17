@@ -8,4 +8,24 @@ body {
     max-width: 1056px;
 }
 
+.header {
+    display: flex;
+}
 
+nav {
+   display: inline-flex
+}
+
+li {
+    display: inline;
+}
+
+select {
+    text-decoration: none;
+    border-style: none;
+}
+
+.search-svg {
+    width: 15px;
+    height: 15px;
+}
