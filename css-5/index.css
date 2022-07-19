@@ -23,6 +23,6 @@ input,select{vertical-align:middle}
 }
 
 .left-empty {
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.548);
     
 }
