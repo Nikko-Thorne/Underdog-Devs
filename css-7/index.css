@@ -16,3 +16,67 @@ table{border-collapse:collapse;border-spacing:0}
 hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
 input,select{vertical-align:middle}
 
+
+.grid {
+    display: grid;
+   grid-template-columns: 100px 100px 100px 100px 100px;
+   grid-template-rows: 75px 75px 75px 75px 75px;
+   grid-template-areas: 
+   "header header header header"
+   "sb-1 sb-2 sb-3 side"
+   "mai mai mai side"
+   "mai mai mai side"
+   "foote foote foote foote"
+   ;
+    padding: 20px;
+    gap: 10px 10px;
+}
+
+.header {
+    grid-area: header;
+    background-color: #e85427;
+    color: white;
+    font-size: larger;
+}
+
+.sb1 {
+    grid-area: sb-1;
+    background-color: #e85427;
+    color: white;
+
+}
+
+.sb2 {
+    grid-area: sb-2;
+    background-color: #e85427;
+    color: white;
+
+}
+
+.sb3 {
+    grid-area: sb-3;
+    background-color: #e85427;
+    color: white;
+
+}
+
+.sidebar {
+    grid-area: side;
+    background-color: #e85427;
+    color: white;
+
+}
+
+.main {
+    grid-area: mai;
+    background-color: #e85427;
+    color: white;
+
+}
+
+.footer {
+    grid-area: foote;
+    background-color: #e85427;
+    color: white;
+
+}
