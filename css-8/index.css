@@ -53,6 +53,7 @@ input,select{vertical-align:middle}
     grid-template-rows: repeat(6, 100px);
     gap: 5px 5px;
     padding: 5px;
+    margin-left: 15px;
 }
 
 .drag-1 {
