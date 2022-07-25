@@ -163,12 +163,12 @@ select {
   height: 100vh;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 2fr repeat(5, 1fr);
-  text-align: center;
-  align-content: center;
 }
 
 .al {
-  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header {
