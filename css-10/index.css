@@ -107,6 +107,7 @@ q:before,
 q:after {
   content: none;
 }
+
 a {
   margin: 0;
   padding: 0;
@@ -149,7 +150,9 @@ input,
 select {
   vertical-align: middle;
 }
+
 /* css reset */
+
 a:link {
   text-decoration: none;
   color: #000;
@@ -172,7 +175,8 @@ nav ul li {
 nav ul li div {
   position: absolute;
   left: -9999px;
-  width: 300px;
+  width: 350px;
+  padding-bottom: 5px;
 }
 
 nav ul li:hover div {
@@ -192,4 +196,34 @@ span {
 
 .clothing-box {
   display: flex;
+  gap: 100px;
+  margin-top: 25px;
+}
+
+.clothing__text {
+  color: #ac5131;
+}
+
+.deals__text {
+  color: #a92828;
+  border-right: 2px solid #c9c9c9;
+  padding-right: 20px;
+}
+
+.nav-links {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.all-clothing-link__text {
+  color: #ac5131;
+  text-decoration: underline;
+}
+
+.all-clothing-link__box {
+  position: absolute;
+  margin-left: 355px;
+  margin-top: 10px;
+  border-top: 2px solid #c9c9c9;
+  width: 75%;
 }
