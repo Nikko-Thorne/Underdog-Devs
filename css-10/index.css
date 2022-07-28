@@ -176,7 +176,7 @@ nav ul li div {
   position: absolute;
   left: -9999px;
   width: 350px;
-  padding-bottom: 5px;
+  gap: 5;
 }
 
 nav ul li:hover div {
@@ -198,6 +198,7 @@ span {
   display: flex;
   gap: 100px;
   margin-top: 25px;
+  justify-content: space-between;
 }
 
 .clothing__text {
