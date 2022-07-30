@@ -161,7 +161,7 @@ body {
   align-items: center;
   overflow: hidden;
   background-color: #eff0f0;
-  gap: 20px;
+  gap: 50px;
   height: 50px;
 }
 
@@ -172,7 +172,6 @@ body {
 
 .dropdown {
   float: left;
-  overflow: hidden;
   margin-left: 50px;
 }
 
@@ -194,7 +193,8 @@ body {
   min-width: 160px;
   z-index: 1;
   gap: 100px;
-  margin-top: 15px;
+  height: 500px;
+  left: 0;
 }
 
 .dropdown-content a {
@@ -212,15 +212,18 @@ body {
   background-color: #f7f6f6;
 }
 
-p {
+.drop-col-1__header {
   font-weight: bold;
 }
 
+.drop-col-1__content {
+}
 .all-clothing-link__text {
   color: #b76448;
   border-top: 2px solid #c9c9c9;
   margin-top: 10px;
   padding-top: 10px;
+  text-decoration: underline;
 }
 
 .deals {
@@ -231,10 +234,6 @@ p {
 
 .clothing-style {
   color: #ac5131;
-}
-
-.drop-down-col-1 a {
-  margin-top: 5px;
 }
 
 .drop-down-col-2 a {
@@ -248,15 +247,15 @@ p {
 .drop-down-col-4 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: 25px;
+  gap: 10px;
 }
 
 .combat-shirts {
   display: flex;
   align-self: center;
-  justify-content: center;
+  justify-content: flex-end;
   border: 2px solid black;
   padding: 10px;
   width: 150px;
@@ -265,5 +264,4 @@ p {
 .footer {
   position: absolute;
   bottom: 20px;
-  width: 80%;
 }
