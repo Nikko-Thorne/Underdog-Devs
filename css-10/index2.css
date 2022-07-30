@@ -175,12 +175,6 @@ body {
   margin-left: 50px;
 }
 
-.dropdown .dropbtn-1 {
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
 .navbar a:hover,
 .dropdown:hover .dropbtn-1 {
   background-color: #f7f6f6;
@@ -193,8 +187,10 @@ body {
   min-width: 160px;
   z-index: 1;
   gap: 100px;
-  height: 500px;
+  height: 450px;
+  width: 1200px;
   left: 0;
+  top: 50px;
 }
 
 .dropdown-content a {
@@ -204,7 +200,6 @@ body {
   display: block;
   text-align: left;
   color: #000;
-  padding-bottom: 10px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -212,36 +207,54 @@ body {
   background-color: #f7f6f6;
 }
 
-.drop-col-1__header {
-  font-weight: bold;
+.dropbtn-1 {
+  height: 75px;
+  width: 100px;
 }
 
-.drop-col-1__content {
+.drop-col__header {
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-left: 10px;
 }
+
+.drop-col__content a {
+  padding-bottom: 10px;
+  margin-left: 10px;
+}
+
+.nav__p {
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+
 .all-clothing-link__text {
-  color: #b76448;
+  color: #ac4f31;
   border-top: 2px solid #c9c9c9;
   margin-top: 10px;
   padding-top: 10px;
   text-decoration: underline;
+  font-weight: bold;
+  font-family: sans-serif;
 }
 
 .deals {
   color: #9c0706;
   padding-right: 20px;
   border-right: 2px solid #c9c9c9;
+  font-weight: bold;
+  font-family: sans-serif;
 }
 
 .clothing-style {
-  color: #ac5131;
-}
-
-.drop-down-col-2 a {
-  margin-top: 5px;
-}
-
-.drop-down-col-3 a {
-  margin-top: 5px;
+  color: #ac4f31;
+  font-weight: bold;
+  font-family: sans-serif;
+  z-index: 2;
+  position: absolute;
+  top: 16px;
+  left: 66px;
 }
 
 .drop-down-col-4 {
@@ -250,18 +263,20 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
+  margin-left: 100px;
 }
 
 .combat-shirts {
   display: flex;
   align-self: center;
-  justify-content: flex-end;
-  border: 2px solid black;
+  justify-content: center;
+  border: 2px solid #9c9c9d;
   padding: 10px;
   width: 150px;
+  font-weight: bold;
 }
 
 .footer {
   position: absolute;
-  bottom: 20px;
+  bottom: 0px;
 }
