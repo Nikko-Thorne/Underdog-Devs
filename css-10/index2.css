@@ -280,3 +280,6 @@ body {
   position: absolute;
   bottom: 0px;
 }
+
+@media all and (min-width: 1200px) {
+}
