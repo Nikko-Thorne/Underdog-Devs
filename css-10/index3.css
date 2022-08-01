@@ -270,7 +270,7 @@ a.deals {
   background-color: #f7f7f7;
 }
 
-.dropdown__col-1 {
+.dropdown__col {
   margin-top: 20px;
   border: 1px solid #c7c7c6;
   box-shadow: 0px -3px 0px 0px #c9c7c7;
@@ -285,15 +285,29 @@ a.deals {
 .drop-col__content {
   display: flex;
   flex-direction: column;
+
   margin-top: 10px;
   margin-left: 10px;
-  gap: 5px;
+  gap: 10px;
 }
 
 .drop-col__content a {
   color: #000;
+  margin-left: 10px;
+  align-items: center;
+  margin-top: 1px;
+  gap: 1px;
+  padding-top: 2px;
+  font-family: sans-serif;
 }
 
-.drop-col__content:before a {
+.drop-col__link {
   border-top: 1px solid #c9c7c7;
+  width: 99%;
+  margin-right: 5px;
+}
+
+.all-clothing-link__text {
+  color: #ad4e31;
+  font-weight: bold;
 }
