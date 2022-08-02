@@ -278,8 +278,13 @@ a.deals {
   margin-left: 10px;
 }
 
+.dropdown__col-2 .dropdown__col-3 {
+  margin-top: 10px;
+}
+
 .drop-col__header {
   font-weight: bold;
+  margin-top: 10px;
 }
 
 .drop-col__content {
@@ -310,4 +315,8 @@ a.deals {
 .all-clothing-link__text {
   color: #ad4e31;
   font-weight: bold;
+}
+
+.caret {
+  margin-left: 95%;
 }
