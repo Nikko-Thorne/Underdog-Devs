@@ -156,7 +156,7 @@ select {
 
 body {
   background-color: #eef0f1;
-  width: 100vh;
+  width: 50vw;
   height: 100vh;
 }
 
@@ -194,7 +194,7 @@ a.deals {
   color: #a61a0d;
 }
 
-.nav__1 {
+.dropdown {
   grid-area: 1;
 }
 
@@ -319,4 +319,109 @@ a.deals {
 
 .caret {
   margin-left: 95%;
+}
+
+.dropdown__col-4 {
+  display: none;
+}
+
+.footer {
+  display: none;
+}
+
+@media all and (min-width: 1000px) {
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #eff0f0;
+    height: 50px;
+    width: 1200px;
+  }
+
+  .dropdown__content {
+    width: 1200px;
+    height: 500px;
+
+    left: 0;
+  }
+
+  .dropdown__col {
+    box-shadow: none;
+    border: none;
+  }
+
+  .drop-col__header {
+    margin-left: 20px;
+    font-weight: bolder;
+  }
+
+  .drop-col__link {
+    border: none;
+    margin-left: none;
+  }
+
+  /* show the dropdown menu on hover */
+  .dropdown:hover .dropdown__content {
+    display: flex;
+    columns: 4;
+  }
+
+  .dropdown__col-4 {
+    display: contents;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-left: 100px;
+  }
+
+  .combat-shirts-image {
+    height: 300px;
+  }
+
+  .combat-shirts {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    border: 2px solid #9c9c9d;
+    padding: 10px;
+    width: 150px;
+    font-weight: bolder;
+  }
+
+  .footer {
+    display: contents;
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+  }
+
+  .all-clothing-link__text {
+    border-top: 2px solid #c9c9c9;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+
+  .caret {
+    display: none;
+  }
+
+  .caret__cloth {
+    display: none;
+  }
+
+  .nav__1 a {
+    color: #ad4e31;
+    font-family: sans-serif;
+  }
+
+  .nav__8 {
+    padding-right: 40px;
+    border-right: 2px solid #c9c9c9;
+    height: 20px;
+  }
 }
