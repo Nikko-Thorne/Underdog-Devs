@@ -187,7 +187,7 @@ a.nav__link {
 }
 
 a.dropnav__clothing {
-  color: #ab3c00;
+  color: black;
 }
 
 a.deals {
@@ -303,8 +303,8 @@ a.deals {
 
 .drop-col__link {
   border-top: 1px solid #c9c7c7;
-  width: 99%;
-  margin-right: 5px;
+  width: 98%;
+  margin-right: 4px;
 }
 
 .all-clothing-link__text {
