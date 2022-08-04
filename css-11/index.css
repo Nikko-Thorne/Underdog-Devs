@@ -153,3 +153,77 @@ select {
 /*
 *  html5resetcss
 */
+
+.navbar {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1;
+  grid-template-areas: repeat(6, 1fr);
+  grid-template-areas:
+    "1"
+    "2"
+    "3"
+    "4"
+    "5"
+    "6";
+}
+
+/* navbar */
+.navbar a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+/* container for drop down */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* dropdown content */
+.dropdown__content {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+/* links inside dropdown menu */
+.dropdown__content a {
+  text-decoration: none;
+}
+
+/* show the dropdown menu on hover */
+.dropdown:hover .dropdown__content {
+  display: block;
+}
+
+.nav__women-link {
+  grid-area: 1;
+}
+
+.nav__men {
+  grid-area: 2;
+}
+
+.nav__accessories {
+  grid-area: 3;
+}
+
+.nav__mirror {
+  grid-area: 4;
+}
+
+.nav__shoes {
+  grid-area: 5;
+}
+
+.nav__like {
+  grid-area: 6;
+}
