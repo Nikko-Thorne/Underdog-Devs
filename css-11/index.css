@@ -232,6 +232,15 @@ button.collapsible__women-text {
   height: 10%;
 }
 
+.shoe {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 10px;
+  font-size: small;
+}
+
 /* navbar links*/
 .navbar a {
   text-decoration: none;
