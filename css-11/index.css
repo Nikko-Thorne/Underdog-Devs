@@ -202,8 +202,9 @@ button {
 }
 
 button.collapsible__women-text {
-  font-weight: 400;
+  font-weight: bolder;
   font-family: sans-serif;
+  color: #000;
 }
 
 .left-chevron {
@@ -239,6 +240,35 @@ button.collapsible__women-text {
   margin-top: 10px;
   gap: 10px;
   font-size: small;
+  border-bottom: 1px solid #e6e6e7;
+  padding-bottom: 20px;
+}
+
+.shoe__image-2 {
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 3px;
+}
+
+.collapsible__women-bottom-text {
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+  gap: 15px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e6e6e7;
+}
+
+.collapsible__women-bottom-link {
+  display: inline-flex;
+  margin-top: 10px;
+  font-size: 10px;
+  height: 75px;
+}
+
+.red-arrow-2 {
+  margin-top: 7px;
 }
 
 /* navbar links*/
