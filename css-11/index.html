@@ -7,18 +7,23 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="index.css" />
+    
   </head>
   <body>
     <div class="wrapper">
       <div class="navbar">
-        <div class="dropdown">
-            <div class="nav__women">
-                <a href="#" class="nav__women-link nav__link">WOMEN</a></div> 
-            
-            <div class="dropdown__content">
-                
+        <button type="button" class="collapsible__women">WOMEN</button>
+            <div class="collapsible__content">
+                <button type="button" class="collapsible__women-text">Women</button>
+                <div class="women-cloth__content"></div>
+                <button type="button" class="collapsible__women-cloth">Women's Clothing</button>
+                <div class="women-cloth__content"></div>
+                <button type="button" class="collapsible__women-access">Accessories</button>
+                <div class="women-access__content"></div>
+                <button type="button" class="collapsible__women-activity">Activity</button>
+                <div class="women-activity__content"></div>
             </div>    
-            </div>
+            
         <div class="nav__men"><a href="#" class="nav__link">MEN</a></div>
         <div class="nav__accessories"><a href="#" class="nav__link">ACCESSORIES</a></div>
         <div class="nav__mirror"><a href="#" class="nav__link">MIRROW</a></div>
@@ -27,5 +32,6 @@
         </div>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

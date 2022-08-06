@@ -158,7 +158,7 @@ select {
   width: 100vw;
   height: 100vh;
   display: grid;
-
+  align-items: flex-start;
   grid-template-columns: 1;
   grid-template-areas: repeat(6, 1fr);
   grid-template-areas:
@@ -170,37 +170,49 @@ select {
     "6";
 }
 
-/* navbar */
+.collapsible__women {
+  cursor: pointer;
+  border: none;
+  background-color: #ffffff;
+  color: #000;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: start;
+  font-size: medium;
+}
+
+.collapsible__content {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 90vh;
+  z-index: 1;
+  top: 0px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+button {
+  background-color: #ffffff;
+  border: none;
+  font-size: large;
+  font-family: "Times New Roman", Times, serif;
+  color: #000;
+  font-weight: 200;
+}
+
+button.collapsible__women-text {
+  font-weight: 400;
+  font-family: sans-serif;
+  text-decoration-thickness: 50%;
+}
+
+/* navbar links*/
 .navbar a {
   text-decoration: none;
   color: #000;
   font-weight: bold;
   font-family: sans-serif;
-}
-
-/* container for drop down */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* dropdown content */
-.dropdown__content {
-  display: none;
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  z-index: 1;
-}
-
-/* links inside dropdown menu */
-.dropdown__content a {
-  text-decoration: none;
-}
-
-/* show the dropdown menu on hover */
-.dropdown:hover .dropdown__content {
-  display: block;
 }
 
 .nav__women-link {
