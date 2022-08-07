@@ -153,6 +153,13 @@ select {
 /*
 *  html5resetcss
 */
+.logo {
+  display: none;
+}
+
+.search__container {
+  display: none;
+}
 
 .navbar {
   width: 100vw;
@@ -303,10 +310,64 @@ button.collapsible__women-text {
   grid-area: 6;
 }
 
-@media all and (min-width: 600) {
+@media all and (min-width: 600px) {
   .wrapper {
+    width: 100vw;
+    height: 100vh;
     display: grid;
-    grid-template-columns: 100px 1fr 200px;
+    grid-template-columns: 100px 0.5fr 50px;
     grid-template-rows: 10% 90%;
+    grid-template-areas: "logo nav search";
+  }
+
+  .logo {
+    display: contents;
+    grid-area: logo;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo__image {
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+
+  .search__container {
+    display: contents;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #faf5f5;
+    gap: 5px;
+    margin-left: 300px;
+  }
+
+  .search-icon {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+  }
+
+  .empty {
+    grid-area: empty;
+  }
+
+  .navbar {
+    width: 80vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: small;
+  }
+
+  .collapsible__women {
+    font-size: small;
+  }
+
+  .nav__like a {
+    color: #d62543;
   }
 }
