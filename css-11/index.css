@@ -302,3 +302,11 @@ button.collapsible__women-text {
 .nav__like {
   grid-area: 6;
 }
+
+@media all and (min-width: 600) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 100px 1fr 200px;
+    grid-template-rows: 10% 90%;
+  }
+}
