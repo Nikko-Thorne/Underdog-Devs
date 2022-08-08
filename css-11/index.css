@@ -397,8 +397,7 @@ button.collapsible__women-text {
   }
 
   .collapsible__content {
-    display: none;
-    position: absolute;
+
     width: 100vw;
     height: 90vh;
     z-index: 1;
