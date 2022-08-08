@@ -261,6 +261,10 @@ button.collapsible__women-text {
   margin-left: 3px;
 }
 
+.shoe__text-4 {
+  display: none;
+}
+
 .shoe__image {
   width: 100vw; 
   height: auto"
@@ -285,6 +289,18 @@ button.collapsible__women-text {
 
 .red-arrow-2 {
   margin-top: 7px;
+}
+
+.main-content {
+  display: none;
+}
+
+.women-bottom-link__activity {
+  display: none;
+}
+
+.women-bottom-link__text {
+  display: none;
 }
 
 /* navbar links*/
@@ -397,7 +413,7 @@ button.collapsible__women-text {
   }
 
   .collapsible__content {
-
+    
     width: 100vw;
     height: 90vh;
     z-index: 1;
@@ -406,15 +422,144 @@ button.collapsible__women-text {
     background-color: #ffffff;
   }
 
+  .main-content-wrapper {
+   position: absolute;
+   top: 30px;
+   left: 270px;
+  }
+
+  .main-content {
+    display: flex;
+    height: 15px;
+  }
+
+  .main-title {
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+    font-weight: bold;
+    gap: 5px;
+  }
+
+  .column-1__content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .main-content__column-2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 34px;
+    margin-left: 45px;
+    gap: 15px;
+
+  }
+
+  .main-content__column-3 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    margin-top: 5px;
+  }
+
+  .column-3__title {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .column-3__content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .red-arrow-3 {
+    width: 15px;
+    height: 15px;
+  }
+
+  .collapsible__women-bottom-text {
+    position: absolute;
+    top: 10px;
+    left: 107px;
+    border-bottom: none;
+    padding-right: 20px;
+    border-right: 1px solid #999899a8;
+  }
+
+  .collapsible__women-bottom-link {
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    height: 50px;
+    margin-top: 50px;
+    background-color: #fafafa;
+  }
+
+  .shop-women__text-1 {
+    position: absolute;
+    right: 450px;
+  }
+
+  .women-bottom-link__activity {
+    display: flex;
+    align-items: center;
+    margin-left: 105px;
+    padding-right: 90px;
+    border-right: 1px solid #999899a8;
+    height: 50px;
+  }
+
+  .women-bottom-link__text {
+    display: flex;
+    flex-direction: row;
+    font-size: medium;
+    font-weight: normal;
+    margin-left: 40px;
+    gap: 50px;
+  }
+
   .border-1 {
     display: none;
   }
 
+.shoe {
+  margin-left: 870px;
+  margin-top: 30px;
+  gap: 15px;
+  
+  border-bottom: none;
+  padding-bottom: 20px;
+}
+
+
   .shoe__text-1 {
     display: none;
   }
+
+.shoe__text-2 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.shoe__text-3 {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+  .shoe__text-4 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 26%;
+    font-size: 10px;
+    
+  }
+
   .shoe__image {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 150px;
   }
 }
