@@ -149,3 +149,9 @@ input,
 select {
   vertical-align: middle;
 }
+
+.search-image {
+  width: 25px;
+  background-color: #fff;
+  border: none;
+}
