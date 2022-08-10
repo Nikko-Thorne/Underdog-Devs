@@ -150,8 +150,41 @@ select {
   vertical-align: middle;
 }
 
+/*
+*  html5resetcss
+*/
+.wrapper {
+  display: grid;
+  justify-content: center;
+  width: 75%;
+  margin: 0 auto;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+    "header header header header header"
+    "nav nav nav nav nav"
+    "main main main main main";
+}
+
+.main {
+  grid-area: main;
+}
+
+.header {
+  grid-area: header;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.images {
+  width: 100px;
+  height: 100px;
+}
+
 .search-image {
-  width: 25px;
+  width: 20px;
   background-color: #fff;
   border: none;
 }
