@@ -163,7 +163,20 @@ select {
   grid-template-areas:
     "header header header header header"
     "nav nav nav nav nav"
-    "main main main main main";
+    "main main main main main"
+    "footer footer footer footer footer";
+}
+
+.header {
+  height: 60%;
+}
+
+.header__title a {
+  font-family: arial bold;
+  font-weight: bold;
+  font-size: 4vw;
+  text-decoration: none;
+  color: #000;
 }
 
 .main {
@@ -172,10 +185,47 @@ select {
 
 .header {
   grid-area: header;
+  border-bottom: 8px solid black;
 }
 
 .nav {
   grid-area: nav;
+}
+
+.nav__left {
+  display: flex;
+  gap: 15px;
+}
+
+.nav__left a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: medium;
+  font-family: arial bold;
+}
+
+.nav__right {
+  display: flex;
+  flex-direction: row;
+  margin-left: 63%;
+  align-items: flex-start;
+}
+
+input.header-search {
+  border: none;
+}
+
+.header-search {
+  width: 10vw;
+  height: 10vh;
+}
+.search-image {
+  width: 1vw;
+  height: 5vh;
+  margin-top: 5px;
+  background-color: #fff;
+  border: none;
 }
 
 .images {
@@ -183,8 +233,6 @@ select {
   height: 100px;
 }
 
-.search-image {
-  width: 20px;
-  background-color: #fff;
-  border: none;
+.footer {
+  grid-area: footer;
 }
