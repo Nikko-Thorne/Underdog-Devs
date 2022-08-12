@@ -224,6 +224,22 @@ select {
   overflow: hidden;
 }
 
+input.header-search {
+  border: none;
+}
+
+.header-search {
+  width: 20vw;
+  height: 10vh;
+}
+
+.search-image {
+  width: 3vw;
+  height: 3vh;
+  background-color: #fff;
+  border: none;
+}
+
 .images {
   width: 75%;
   height: 75%;
@@ -266,20 +282,19 @@ select {
     margin-top: -30px;
   }
 
-  input.header-search {
-    border: none;
-  }
-
   .header-search {
     width: 9vw;
     height: 9vh;
   }
+
   .search-image {
     width: 1vw;
     height: 5vh;
+  }
 
-    background-color: #fff;
-    border: none;
+  .wraps {
+    display: flex;
+    justify-content: space-between;
   }
 
   .images {
