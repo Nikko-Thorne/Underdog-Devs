@@ -151,7 +151,7 @@ select {
 }
 
 /*
-*  html5resetcss
+******************** html5resetcss
 */
 
 .wrapper {
@@ -159,31 +159,74 @@ select {
   justify-content: center;
   width: 100%;
   margin: 0 auto;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 0.5fr) repeat(4, 1fr);
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 40px repeat(4, 1fr);
   grid-template-areas:
-    "header header"
-    "nav nav"
-    "main main"
-    "footer footer";
+    "header"
+    "nav"
+    "main"
+    "footer";
 }
 
 .header {
-  height: 60%;
+  grid-area: header;
+  height: 4vh;
+  border-bottom: 4px solid black;
 }
 
 .header__title a {
+  display: flex;
+  justify-content: center;
   font-family: arial bold;
   font-weight: bold;
-  font-size: 1vh;
+  font-size: 4vh;
   color: #000;
+  text-decoration: none;
   text-shadow: -1px 1px 0px black, 1px 1px 0 black, 1px -1px 0 black,
     -1px -1px 0 black;
 }
 
+.main {
+  grid-area: main;
+}
+
+.nav {
+  grid-area: nav;
+  display: flex;
+  height: 3vh;
+  border-bottom: 2px solid #000;
+}
+
+.nav__left {
+  display: flex;
+  width: 50%;
+  flex: 1;
+  height: 3vh;
+  gap: 5px;
+}
+
+.nav__left a {
+  display: flex;
+  margin-top: 5px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: medium;
+  font-family: arial bold;
+}
+
+.nav__right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 25%;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
 .images {
-  width: 550px;
-  height: 550px;
+  width: 75%;
+  height: 75%;
 }
 
 @media all and (min-width: 600px) {
@@ -198,54 +241,28 @@ select {
       "footer footer footer footer footer";
   }
 
-  .header__title a {
-    font-size: 4vw;
-    text-decoration: none;
-  }
-
-  .main {
-    grid-area: main;
-  }
-
   .header {
-    grid-area: header;
+    height: 60%;
     border-bottom: 8px solid black;
   }
 
-  .nav {
+  .header a {
     display: flex;
-
-    grid-area: nav;
-    height: 3vh;
-
-    border-bottom: 2px solid #000;
+    justify-content: flex-start;
+    font-size: 12vh;
   }
 
   .nav__left {
-    display: flex;
-    width: 50%;
-    flex: 1;
-    height: 3vh;
     gap: 15px;
   }
 
   .nav__left a {
-    display: flex;
     margin-top: -20px;
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    font-size: medium;
-    font-family: arial bold;
   }
 
   .nav__right {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     margin-left: 55%;
     width: 50%;
-    overflow: hidden;
     margin-top: -30px;
   }
 
