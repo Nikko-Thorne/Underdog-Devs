@@ -170,7 +170,7 @@ select {
 
 .header {
   grid-area: header;
-  height: 4vh;
+
   border-bottom: 4px solid black;
 }
 
@@ -179,7 +179,7 @@ select {
   justify-content: center;
   font-family: arial bold;
   font-weight: bold;
-  font-size: 4vh;
+  font-size: 2em;
   color: #000;
   text-decoration: none;
   text-shadow: -1px 1px 0px black, 1px 1px 0 black, 1px -1px 0 black,
@@ -203,6 +203,8 @@ select {
   flex: 1;
   height: 3vh;
   gap: 5px;
+  font-weight: bold;
+  margin-top: -4px;
 }
 
 .nav__left a {
@@ -240,12 +242,14 @@ input.header-search {
   border: none;
 }
 
+/*
 .images {
   width: 75%;
   height: 75%;
 }
+*/
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 611px) {
   .wrapper {
     width: 60vw;
     grid-template-rows: repeat(4, 1fr);
@@ -265,7 +269,7 @@ input.header-search {
   .header a {
     display: flex;
     justify-content: flex-start;
-    font-size: 12vh;
+    font-size: 4em;
   }
 
   .nav__left {
@@ -295,11 +299,6 @@ input.header-search {
   .wraps {
     display: flex;
     justify-content: space-between;
-  }
-
-  .images {
-    width: 100px;
-    height: 100px;
   }
 
   .footer {
