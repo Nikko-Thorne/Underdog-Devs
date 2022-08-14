@@ -231,6 +231,7 @@ select {
   flex-direction: row;
   align-items: center;
   width: 25%;
+  min-width: 76px;
   overflow: hidden;
 }
 
@@ -246,13 +247,19 @@ input.header-search {
   width: 3vw;
   height: 3vh;
   min-height: 13px;
+  min-width: 11px;
   background-color: #fff;
   border: none;
 }
 
-.images {
-  width: 75%;
-  height: 75%;
+.image-slideshow {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  width: 320px;
+}
+
+.button-left {
 }
 
 @media all and (min-width: 500px) {
