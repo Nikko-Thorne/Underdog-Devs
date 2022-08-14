@@ -192,6 +192,7 @@ select {
 
 .main {
   grid-area: main;
+  margin-top: 30px;
 }
 
 .nav {
@@ -255,11 +256,14 @@ input.header-search {
 .image-slideshow {
   display: flex;
   justify-content: center;
-  height: 400px;
-  width: 320px;
+  min-height: 400px;
+  min-width: 320px;
 }
 
-.button-left {
+.title-wraps {
+  display: flex;
+  justify-content: center;
+  font-size: max(1em, 32px);
 }
 
 @media all and (min-width: 500px) {
