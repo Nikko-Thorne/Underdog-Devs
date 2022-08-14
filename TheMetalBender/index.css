@@ -161,6 +161,7 @@ select {
   width: 100%;
   min-width: 320px;
   margin: 0 auto;
+  max-width: 100%;
   grid-template-columns: 1fr;
   grid-template-rows: 40px 40px repeat(4, 1fr);
   grid-template-areas:
@@ -172,18 +173,17 @@ select {
 
 .header {
   grid-area: header;
-
+  display: flex;
+  align-items: flex-end;
   border-bottom: 4px solid black;
 }
 
 .header__title a {
-  display: flex;
-  justify-content: flex-start;
   white-space: nowrap;
   min-width: 320px;
   font-family: arial bold;
   font-weight: bold;
-  font-size: 25px;
+  font-size: max(1em, 25px);
   color: #000;
   text-decoration: none;
   text-shadow: -1px 1px 0px black, 1px 1px 0 black, 1px -1px 0 black,
@@ -199,12 +199,15 @@ select {
   display: flex;
   height: 3vh;
   min-height: 18px;
+  max-width: 100%;
+  overflow: hidden;
   border-bottom: 2px solid #000;
 }
 
 .nav__left {
   display: flex;
   width: 50%;
+  min-width: 279px;
   flex: 1;
   height: 3vh;
   gap: 5px;
@@ -224,25 +227,25 @@ select {
 
 .nav__right {
   display: flex;
+  justify-content: flex-end;
   flex-direction: row;
   align-items: center;
   width: 25%;
-  margin-right: 10px;
   overflow: hidden;
 }
 
 input.header-search {
   border: none;
-}
-
-.header-search {
-  width: 20vw;
+  min-width: 63px;
+  width: 1em;
   height: 10vh;
+  min-height: 13px;
 }
 
 .search-image {
   width: 3vw;
   height: 3vh;
+  min-height: 13px;
   background-color: #fff;
   border: none;
 }
@@ -252,7 +255,7 @@ input.header-search {
   height: 75%;
 }
 
-@media all and (min-width: 1280px) {
+@media all and (min-width: 500px) {
   .wrapper {
     width: 60vw;
     grid-template-rows: repeat(4, 1fr);
