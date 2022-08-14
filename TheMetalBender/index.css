@@ -154,10 +154,12 @@ select {
 ******************** html5resetcss
 */
 
+/* min 320 px width */
 .wrapper {
   display: grid;
   justify-content: center;
   width: 100%;
+  min-width: 320px;
   margin: 0 auto;
   grid-template-columns: 1fr;
   grid-template-rows: 40px 40px repeat(4, 1fr);
@@ -176,10 +178,12 @@ select {
 
 .header__title a {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  white-space: nowrap;
+  min-width: 320px;
   font-family: arial bold;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 25px;
   color: #000;
   text-decoration: none;
   text-shadow: -1px 1px 0px black, 1px 1px 0 black, 1px -1px 0 black,
@@ -194,6 +198,7 @@ select {
   grid-area: nav;
   display: flex;
   height: 3vh;
+  min-height: 18px;
   border-bottom: 2px solid #000;
 }
 
@@ -242,14 +247,12 @@ input.header-search {
   border: none;
 }
 
-/*
 .images {
   width: 75%;
   height: 75%;
 }
-*/
 
-@media all and (min-width: 611px) {
+@media all and (min-width: 1280px) {
   .wrapper {
     width: 60vw;
     grid-template-rows: repeat(4, 1fr);
@@ -269,6 +272,7 @@ input.header-search {
   .header a {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: nowrap;
     font-size: 4em;
   }
 
