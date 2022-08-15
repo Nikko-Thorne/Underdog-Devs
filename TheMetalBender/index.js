@@ -8,6 +8,7 @@ function plusDivs(n) {
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
+  let captionText = document.getElementById("caption");
   if (n > x.length) {
     slideIndex = 1;
   }
@@ -18,4 +19,5 @@ function showDivs(n) {
     x[i].style.display = "none";
   }
   x[slideIndex - 1].style.display = "block";
+  captionText.innerHTML = x[slideIndex - 1].alt;
 }

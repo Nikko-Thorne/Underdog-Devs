@@ -163,7 +163,7 @@ select {
   margin: 0 auto;
   max-width: 100%;
   grid-template-columns: 1fr;
-  grid-template-rows: 40px 40px repeat(4, 1fr);
+  grid-template-rows: 80px 40px 1fr 100px;
   grid-template-areas:
     "header"
     "nav"
@@ -208,7 +208,7 @@ select {
 .nav__left {
   display: flex;
   width: 50%;
-  min-width: 279px;
+
   flex: 1;
   height: 3vh;
   gap: 5px;
@@ -258,12 +258,38 @@ input.header-search {
   justify-content: center;
   min-height: 400px;
   min-width: 320px;
+  width: 100%;
 }
 
 .title-wraps {
   display: flex;
   justify-content: center;
   font-size: max(1em, 32px);
+}
+
+.buttons {
+  background-color: rgb(255, 255, 255);
+  color: #222;
+}
+
+.caption-container {
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding: 2px 16px;
+  color: #222;
+  height: auto;
+  width: 90%;
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+  border-top: 5px solid #000;
+  height: 100px;
 }
 
 @media all and (min-width: 500px) {
@@ -317,9 +343,5 @@ input.header-search {
   .wraps {
     display: flex;
     justify-content: space-between;
-  }
-
-  .footer {
-    grid-area: footer;
   }
 }
