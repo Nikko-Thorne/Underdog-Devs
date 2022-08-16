@@ -295,7 +295,7 @@ input.header-search {
 @media all and (min-width: 500px) {
   .wrapper {
     width: 60vw;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 100px 100px repeat(2, 1fr);
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas:
       "header header header header header"
@@ -305,7 +305,7 @@ input.header-search {
   }
 
   .header {
-    height: 60%;
+    max-height: auto;
     border-bottom: 8px solid black;
   }
 
@@ -316,8 +316,17 @@ input.header-search {
     font-size: 4em;
   }
 
+  .nav {
+    height: 40%;
+    width: 100%;
+    font-size: 64px;
+  }
+
   .nav__left {
+    width: 100%;
+    height: 100%;
     gap: 15px;
+    font-size: 64px;
   }
 
   .nav__left a {
