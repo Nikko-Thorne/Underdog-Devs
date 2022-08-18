@@ -330,10 +330,12 @@ input.header-search {
   }
 
   .nav__left a {
-    font-size: 3vw;
+    font-size: 2vw;
   }
 
   .nav__right {
+    width: 50%;
+    height: 100%;
   }
 
   .header-search {
