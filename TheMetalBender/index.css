@@ -351,5 +351,6 @@ input.header-search {
   .wraps {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }
