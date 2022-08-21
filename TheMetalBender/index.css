@@ -370,16 +370,19 @@ input.header-search {
   .desktop-image-slideshow {
     display: grid;
     width: 100%;
-
+    margin-top: 100px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 25px 1fr 25px 1fr 25px 1fr 25px 1fr;
     grid-template-areas:
+      "pt pt pt pt"
+      "pendant pendant pendant pendant"
       "gt gt gt gt"
       "grillz grillz grillz grillz";
   }
 
   .grillz-title {
     grid-area: gt;
+    margin-top: 50px;
   }
 
   .grillz-title a:link {
@@ -390,6 +393,23 @@ input.header-search {
 
   .grillz-box {
     grid-area: grillz;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  .pendant-title {
+    grid-area: pt;
+  }
+
+  .pendant-title a:link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+  }
+
+  .pendant-box {
+    grid-area: pendant;
     display: flex;
     justify-content: space-between;
   }
