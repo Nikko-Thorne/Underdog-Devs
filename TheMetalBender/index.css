@@ -371,13 +371,51 @@ input.header-search {
     display: grid;
     width: 100%;
     margin-top: 100px;
-    grid-template-columns: repeat(4, 1fr);
+
     grid-template-rows: 25px 1fr 25px 1fr 25px 1fr 25px 1fr;
     grid-template-areas:
       "pt pt pt pt"
       "pendant pendant pendant pendant"
+      "rt rt rt rt"
+      "rings rings rings rings"
       "gt gt gt gt"
-      "grillz grillz grillz grillz";
+      "grillz grillz grillz grillz"
+      "wt wt wt wt"
+      "wrap wrap wrap wrap";
+  }
+
+  .pendant-title {
+    grid-area: pt;
+  }
+
+  .pendant-title a:link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+  }
+
+  .pendant-box {
+    grid-area: pendant;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ring-title {
+    grid-area: rt;
+    margin-top: 50px;
+  }
+
+  .ring-title a:link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+  }
+
+  .ring-box {
+    grid-area: rings;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
   }
 
   .grillz-title {
@@ -398,19 +436,21 @@ input.header-search {
     margin-top: 50px;
   }
 
-  .pendant-title {
-    grid-area: pt;
+  .wirewrap-title {
+    grid-area: wt;
+    margin-top: 50px;
   }
 
-  .pendant-title a:link {
+  .wirewrap-title a:link {
     text-decoration: none;
     color: #000;
     font-weight: bolder;
   }
 
-  .pendant-box {
-    grid-area: pendant;
+  .wirewrap-box {
+    grid-area: wrap;
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
   }
 }
