@@ -262,7 +262,7 @@ input.header-search {
   width: 100%;
 }
 
-.title-wraps {
+.title-collection {
   display: flex;
   justify-content: center;
   font-size: max(1em, 32px);
@@ -356,7 +356,7 @@ input.header-search {
     height: 5vh;
   }
 
-  .title-wraps {
+  .title-collection {
     display: none;
   }
 
@@ -364,6 +364,14 @@ input.header-search {
     display: none;
   }
   .caption-container {
+    display: none;
+  }
+
+  .title-pendant {
+    display: none;
+  }
+
+  .pendant-image-slideshow {
     display: none;
   }
 
