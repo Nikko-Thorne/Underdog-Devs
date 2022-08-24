@@ -461,4 +461,8 @@ input.header-search {
     justify-content: space-between;
     margin-top: 50px;
   }
+
+  .image-box-sizing {
+    box-sizing: border-box;
+  }
 }
