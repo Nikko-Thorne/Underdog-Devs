@@ -254,37 +254,100 @@ input.header-search {
   border: none;
 }
 
-.mobile-image-slideshow {
-  display: flex;
-  justify-content: center;
-  min-height: 400px;
-  min-width: 320px;
-  width: 100%;
-}
-
 .title-collection {
   display: flex;
   justify-content: center;
   font-size: max(1em, 32px);
 }
 
-.buttons {
-  background-color: rgb(255, 255, 255);
-  color: #222;
-}
-
-.caption-container {
-  flex-wrap: wrap;
-  text-align: center;
-  background-color: rgb(255, 255, 255);
-  padding: 2px 16px;
-  color: #222;
-  height: auto;
-  width: 90%;
-}
-
 .desktop-image-slideshow {
-  display: none;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 110px 800px 110px 800px 110px 900px 110px 900px;
+  grid-template-areas:
+    "pt"
+    "pendant"
+    "rt"
+    "rings"
+    "gt"
+    "grillz"
+    "wt"
+    "wrap";
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.pendant-title {
+  grid-area: pt;
+  justify-self: center;
+}
+
+.pendant-title a:link {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+}
+
+.pendant-box {
+  grid-area: pendant;
+  justify-self: center;
+}
+
+.ring-title {
+  grid-area: rt;
+  justify-self: center;
+  margin-top: 50px;
+}
+
+.ring-title a:link {
+  text-decoration: none;
+  color: #000;
+  font-weight: bolder;
+}
+
+.ring-box {
+  grid-area: rings;
+  justify-self: center;
+}
+
+.grillz-title {
+  grid-area: gt;
+  justify-self: center;
+  margin-top: 50px;
+}
+
+.grillz-title a:link {
+  text-decoration: none;
+  color: #000;
+  font-weight: bolder;
+}
+
+.grillz-box {
+  grid-area: grillz;
+  justify-self: center;
+  margin-top: 50px;
+}
+
+.wirewrap-title {
+  grid-area: wt;
+  justify-self: center;
+  margin-top: 50px;
+}
+
+.wirewrap-title a:link {
+  text-decoration: none;
+  color: #000;
+  font-weight: bolder;
+}
+
+.wirewrap-box {
+  grid-area: wrap;
+  justify-self: center;
+  margin-top: 50px;
 }
 
 .footer {
@@ -360,19 +423,174 @@ input.header-search {
     display: none;
   }
 
-  .mobile-image-slideshow {
-    display: none;
-  }
-  .caption-container {
-    display: none;
+  .desktop-image-slideshow {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2fr;
+    grid-template-rows: 110px 400px 110px 400px 110px 500px 110px 500px;
+    grid-template-areas:
+      "pt pt"
+      "pendant pendant"
+      "rt rt"
+      "rings rings"
+      "gt gt"
+      "grillz grillz"
+      "wt wt"
+      "wrap wrap";
   }
 
-  .title-pendant {
-    display: none;
+  .pendant-box {
+    grid-area: pendant;
+    justify-content: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    max-width: 500px;
   }
 
-  .pendant-image-slideshow {
-    display: none;
+  .ring-box {
+    grid-area: rings;
+    justify-content: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+  }
+
+  .grillz-box {
+    grid-area: grillz;
+    justify-content: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    gap: 10px;
+  }
+
+  .wirewrap-box {
+    grid-area: wrap;
+    justify-content: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    gap: 10px;
+  }
+}
+
+@media all and (min-width: 667px) {
+  .wrapper {
+    width: 60vw;
+    grid-template-rows: 100px 50px 1fr 100px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+      "header header header header header"
+      "nav nav nav nav nav"
+      "main main main main main"
+      "footer footer footer footer footer";
+  }
+
+  .header {
+    max-height: auto;
+    border-bottom: 8px solid black;
+  }
+
+  .header a {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    font-size: 4vw;
+  }
+
+  .nav {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+  }
+
+  .nav__left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav__left a {
+    display: flex;
+    align-items: center;
+    font-size: min(3vw, 25px);
+    margin-bottom: 20px;
+  }
+
+  .nav__right {
+    width: 50%;
+    height: 100%;
+  }
+
+  .header-search {
+    width: 9vw;
+    height: 9vh;
+  }
+
+  .search-image {
+    width: 1vw;
+    height: 5vh;
+  }
+}
+
+@media all and (min-width: 1250px) {
+  .wrapper {
+    width: 60vw;
+    grid-template-rows: 100px 50px 1fr 100px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+      "header header header header header"
+      "nav nav nav nav nav"
+      "main main main main main"
+      "footer footer footer footer footer";
+  }
+
+  .header {
+    max-height: auto;
+    border-bottom: 8px solid black;
+  }
+
+  .header a {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    font-size: 4vw;
+  }
+
+  .nav {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+  }
+
+  .nav__left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav__left a {
+    display: flex;
+    align-items: center;
+    font-size: min(3vw, 25px);
+    margin-bottom: 20px;
+  }
+
+  .nav__right {
+    width: 50%;
+    height: 100%;
+  }
+
+  .header-search {
+    width: 9vw;
+    height: 9vh;
+  }
+
+  .search-image {
+    width: 1vw;
+    height: 5vh;
   }
 
   .desktop-image-slideshow {
@@ -380,7 +598,7 @@ input.header-search {
     width: 100%;
     margin-top: 100px;
 
-    grid-template-rows: 25px 1fr 25px 1fr 25px 1fr 25px 1fr;
+    grid-template-rows: 25px 200 25px 1fr 25px 1fr 25px 1fr;
     grid-template-areas:
       "pt pt pt pt"
       "pendant pendant pendant pendant"
@@ -394,6 +612,8 @@ input.header-search {
 
   .pendant-title {
     grid-area: pt;
+    margin-bottom: 20px;
+    justify-self: center;
   }
 
   .pendant-title a:link {
@@ -404,8 +624,6 @@ input.header-search {
 
   .pendant-box {
     grid-area: pendant;
-    display: flex;
-    justify-content: space-between;
   }
 
   .ring-title {
@@ -421,8 +639,6 @@ input.header-search {
 
   .ring-box {
     grid-area: rings;
-    display: flex;
-    justify-content: space-between;
     margin-top: 50px;
   }
 
@@ -439,8 +655,6 @@ input.header-search {
 
   .grillz-box {
     grid-area: grillz;
-    display: flex;
-    justify-content: space-between;
     margin-top: 50px;
   }
 
@@ -457,12 +671,11 @@ input.header-search {
 
   .wirewrap-box {
     grid-area: wrap;
-    display: flex;
-    justify-content: space-between;
     margin-top: 50px;
   }
 
-  .image-box-sizing {
-    box-sizing: border-box;
+  .box-css {
+    display: flex;
+    flex-wrap: nowrap;
   }
 }
