@@ -544,6 +544,11 @@ a:-webkit-any-link {
     height: 400px;
   }
 
+  .title-css {
+    display: flex;
+    align-self: center;
+  }
+
   .title-css a {
     font-size: larger;
     font-weight: bold;
